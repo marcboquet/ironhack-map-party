@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Theater.h"
+#import "TheaterAnnotationView.h"
 
 @import MapKit;
 
@@ -61,6 +62,9 @@
 
     
     self.mapView.showsUserLocation = YES;
+    
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(CLLocationCoordinate2DMake(42, 2), 2000, 2000);
+    [self.mapView setRegion:region animated:NO];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
@@ -87,11 +91,11 @@
     } else if ([annotation isKindOfClass:[Theater class]]) {
         Theater *theater = annotation;
         
-        MKPinAnnotationView *annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"NormalPin"];
+        TheaterAnnotationView *annotationView = [[TheaterAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"NormalPin"];
         
         annotationView.canShowCallout = YES;
         //[annotationView setAnimatesDrop:YES];
-        [annotationView setPinColor:theater.color];
+        //[annotationView setPinColor:theater.color];
         
         return annotationView;
     } else {

@@ -16,6 +16,7 @@
 		49B5BF3E1A13736500C8D113 /* WhereTheFIAmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B5BF3D1A13736500C8D113 /* WhereTheFIAmTests.m */; };
 		49B5BF481A1373BA00C8D113 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B5BF471A1373BA00C8D113 /* MapKit.framework */; };
 		49B5BF4B1A137BF000C8D113 /* Theater.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B5BF4A1A137BF000C8D113 /* Theater.m */; };
+		49B5BF4E1A13860600C8D113 /* TheaterAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B5BF4D1A13860600C8D113 /* TheaterAnnotationView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		49B5BF471A1373BA00C8D113 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		49B5BF491A137BF000C8D113 /* Theater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theater.h; sourceTree = "<group>"; };
 		49B5BF4A1A137BF000C8D113 /* Theater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Theater.m; sourceTree = "<group>"; };
+		49B5BF4C1A13860600C8D113 /* TheaterAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheaterAnnotationView.h; sourceTree = "<group>"; };
+		49B5BF4D1A13860600C8D113 /* TheaterAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheaterAnnotationView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +101,8 @@
 				49B5BF211A13736400C8D113 /* Supporting Files */,
 				49B5BF491A137BF000C8D113 /* Theater.h */,
 				49B5BF4A1A137BF000C8D113 /* Theater.m */,
+				49B5BF4C1A13860600C8D113 /* TheaterAnnotationView.h */,
+				49B5BF4D1A13860600C8D113 /* TheaterAnnotationView.m */,
 			);
 			path = WhereTheFIAm;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49B5BF2A1A13736400C8D113 /* ViewController.m in Sources */,
+				49B5BF4E1A13860600C8D113 /* TheaterAnnotationView.m in Sources */,
 				49B5BF4B1A137BF000C8D113 /* Theater.m in Sources */,
 				49B5BF271A13736400C8D113 /* AppDelegate.m in Sources */,
 				49B5BF241A13736400C8D113 /* main.m in Sources */,
