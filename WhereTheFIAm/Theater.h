@@ -14,6 +14,7 @@
 @property BOOL hasSubtitles;
 
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
+@property MKPinAnnotationColor color;
 
 @property (nonatomic, readonly, copy) NSString *title;
 @property (nonatomic, readonly, copy) NSString *subtitle;
